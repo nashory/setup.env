@@ -10,3 +10,6 @@ mkdir -p ~/.vim/autoload && wget https://raw.githubusercontent.com/junegunn/vim-
 
 # tmux Setting
 sudo apt-get install -y tmux cmake && rm -rf ~/.tmux && cp -r ~/setup.env/tmux-config ~/.tmux && ln -s ~/.tmux/.tmux.conf ~/.tmux.conf && cd ~/.tmux && cd ~/.tmux/vendor/tmux-mem-cpu-load && mkdir -p build && cd build && cmake .. && sudo make install && cd ~ && tmux source-file ~/.tmux.conf
+
+# clean
+rm -rf ~/setup.env
